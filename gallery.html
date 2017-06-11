@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/gallery1.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400,400i,700,700i,800" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header>
+    <a href="index.html" id="logo">
+        <h1> 重科魔术联盟</h1>
+        <h2>Easy and Happy to learn</h2>
+    </a>
+    <nav>
+        <ul>
+            <li><a href="contetn.html">社团介绍</a> </li>
+            <li><a href="index.html">社团活动</a></li>
+            <li><a href="gallery.html">成员画廊</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="wrapper">
+    <section>
+        <div id="warp" class="wrap">
+            <!-- 负责平移，旋转 -->
+            <div class="photo photo-front" onclick="turn(this)" id="photo_{{index}}">
+                <!-- 负责翻转 -->
+                <div class="photo-wrap">
+                    <div class="side side-front">
+                        <p class="image"><img src="images/{{img}}" alt="海报画廊"></p>
+                        <p class="caption">{{caption}}</p>
+                    </div>
+                    <div class="side side-back">
+                        <p class="desc">{{desc}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="images/data.js"></script>
+        <script type="text/javascript" src="js/poster.js"></script>
+    </section>
+    <footer>
+        <a href="http://twitter.com"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+        <a href="http://facebook.com"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+
+        <p>&copy;2017 Koc</p>
+    </footer>
+</div>
+</body>
+</html>
